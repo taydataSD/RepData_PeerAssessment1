@@ -67,7 +67,7 @@ hist(avg_steps$steps, main = paste("Total Number of Steps Taken Each Day"),
 dev.copy(png,file="hist1.png", height=480,width=480)
 dev.off()
 ```
-![plot of Histogram1](./RepData_PeerAssessment1/instructions_fig/hist1.png) 
+![Histogram1](instructions_fig/hist1.png) 
 
 2. Calculate and report the **mean** and **median** total number of steps taken per day
 
@@ -89,7 +89,7 @@ five_min <- aggregate(steps ~ interval, act_data, mean)
 plot(five_min$interval,five_min$steps, type="l", xlab="Intervals", ylab="Total Number of Steps",main="Average Number of Steps per Day by Five Minute Intervals")
 ```
 
-![plot of chunk unnamed-chunk-3](./RepData_PeerAssessment1/instructions_fig/timeSeries.png) 
+![TimeSeries](instructions_fig/timeSeries.png) 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -137,7 +137,7 @@ dev.copy(png,file="hist2.png", height=480,width=480)
 dev.off()
 ```
 
-![plot of Histogram2](./RepData_PeerAssessment1/instructions_fig/hist2.png)
+![Histogram2](instructions_fig/hist2.png) 
 
 ```r
 rmean2 <- mean(act_data_noMiss$steps)
@@ -178,7 +178,7 @@ xyplot(act_data_noMiss$steps ~ act_data_noMiss$interval|act_data_noMiss$dow, mai
 dev.copy(png,file="panel.png", height=500,width=500)
 dev.off()
 ```
-![plot of panelplot](./RepData_PeerAssessment1/instructions_fig/panel.png)
+![PanelPlot](instructions_fig/panel.png) 
 
 ## Submitting the Assignment
 
